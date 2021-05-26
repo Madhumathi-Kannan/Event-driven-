@@ -1,0 +1,19 @@
+import tkinter as tk
+
+
+window=tk.Tk()
+def com():
+    lab=tk.Label(window, bg="blue", bd=10, text= "The button clicked")
+    lab.pack()
+print("i have a surprise for you")
+
+
+button= tk.Button(window, bd=15,bg="light green", text="click here", command=com) 
+canv=tk.Canvas(window, bg="yellow", cursor= "circle")
+canv.create_rectangle(150, 120, 120,150)
+canv.create_arc(150,60,12, 250)
+
+
+canv.pack()
+button.pack()
+tk.mainloop()
